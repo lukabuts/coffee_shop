@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+body {
+  background: url("./components/img/bg-cafe.jpg") top no-repeat;
+  background-color: #111315 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  color: #fef7ee;
+  background-color: #1b1d1f;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.container .title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  align-self: center;
+}
+
+.container .title p {
+  color: #6f757c;
+}
+
+.container .title .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.container .title button {
+  color: #fef7ee;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.container .title button.active {
+  background-color: #6f757c;
+}
+
+/* Item -container  */
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px 20px;
+}
